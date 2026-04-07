@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-body;
+}
+
+.ck-card {
+  @apply rounded-2xl border border-slate-200/80 bg-white shadow-sm overflow-hidden transition hover:shadow-md;
+}
+
+.ck-btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-ck-orange px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-ck-orangeSoft disabled:opacity-50;
+}
+
+.ck-btn-secondary {
+  @apply inline-flex items-center justify-center rounded-xl border border-ck-blue/30 bg-white px-4 py-2.5 text-sm font-semibold text-ck-blue hover:bg-ck-blue/5;
+}
+
+.ck-input {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm outline-none ring-ck-purple/30 focus:ring-2;
+}
