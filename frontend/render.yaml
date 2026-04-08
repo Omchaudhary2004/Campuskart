@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: campuskart-frontend
+    env: node
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm install -g serve && serve -s dist -l 5173
+    envVars:
+      - key: NODE_ENV
+        value: production
